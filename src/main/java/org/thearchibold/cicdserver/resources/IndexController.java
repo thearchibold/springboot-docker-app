@@ -23,7 +23,9 @@ public class IndexController {
     @GetMapping(value = "/health")
     public ResponseEntity getHealth(){
         HashMap<Object, Object> health =  new HashMap<Object, Object>(1);
-        health.put("status", "OK");
+        health.put("status", "working");
         return ResponseEntity.ok().body(health);
     }
+
+
 }
